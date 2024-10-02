@@ -170,5 +170,3 @@ sign.onclick = function () {
 }
 
 result.onclick = () => calculate();
-
-

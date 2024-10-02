@@ -2,10 +2,10 @@
     background-color: #1b1b1b;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 100px;
-    max-width: 40%;
+    margin-top: 40px;
+    max-width: 30%;
     width: 100%;
-    padding: 50px;
+    padding: 30px;
     border-radius: 10px;
     color: #fff;
 }
@@ -13,7 +13,7 @@
 .calc-body #result-screen{
     height: 100px;
     width: 80%;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-right: auto;
     margin-left: auto;
     border-radius: 10px;
@@ -23,7 +23,7 @@
 }
 
 #btns{
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 #btns .btn-line{
