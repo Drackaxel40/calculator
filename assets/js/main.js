@@ -45,6 +45,27 @@ function calculate() {
 
 // Function to add numbers
 function addNumber(number) {
+
+    if (['+', '-', '*', '/'].includes(number)) {
+
+        // If the operation is empty, we do nothing
+        if (op.length === 0 && total.innerText === "0") {
+            return;
+        }
+
+        // If we have a previous result, we add it to the operation
+        if (total.innerText !== "0") {
+            op.push(total.innerText);
+            total.innerText = "0";
+        }
+
+        // Si le dernier élément est déjà un opérateur, le remplace par le nouvel opérateur
+        if (['+', '-', '*', '/'].includes(op[op.length - 1])) {
+            op.pop(); // Retire l'opérateur précédent
+        }
+    }
+
+
     op.push(number);
     updateDisplay();
 }
